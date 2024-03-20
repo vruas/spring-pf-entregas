@@ -20,7 +20,7 @@ public class Passageiro {
             name = "SQ_PASSAGEIRO",
             sequenceName = "SQ_PASSAGEIRO",
             initialValue = 1,
-            allocationSize = 1
+            allocationSize = 50
     )
     @Column(name = "ID_PASSAGEIRO")
     private Long id;
