@@ -22,6 +22,11 @@ public class EnderecoResource {
     @Autowired
     private PessoaRepository repoPessoa;
 
+    @GetMapping
+    public List<Endereco> findAll() {
+        return repoEndereco.findAll();
+    }
+
     @GetMapping(value = "/cep/{cep}")
     public List<Endereco> findByCep(@PathVariable String cep) {
         List<Endereco> end = repoEndereco.findAll();
